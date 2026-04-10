@@ -153,7 +153,7 @@ payload = b"wacky ALL=(ALL) NOPASSWD: ALL\n"
 
 # 🛠 Full Exploit
 
-See [`exploit.py`](./exploit.py)
+See [`exploit.py`](./backup.py)
 
 ---
 
