@@ -1,8 +1,7 @@
 
 # 🧠 WingData – Advanced Exploit Research (HTB / CTF)
 
-> A deep-dive security research repository demonstrating **Tar Symlink Path Traversal → Root Privilege Escalation**, written in a style inspired by top-tier researchers.
-
+> A deep-dive security research repository demonstrating **Tar Symlink Path Traversal → Root Privilege Escalation**.
 ---
 
 # 📌 Executive Summary
@@ -13,31 +12,14 @@
 | Vulnerability        | Tar Symlink Path Traversal   |
 | Impact               | Arbitrary File Write         |
 | Privilege Escalation | Root (via sudoers overwrite) |
-| Difficulty           | Medium                       |
+| Difficulty           | Easy                       |
 
 ---
-
-# 🎯 Attack Chain Overview
-
-```
-User Input (Tar Archive)
-        ↓
-restore_backup_clients.py (runs as root)
-        ↓
-Unsafe tar extraction
-        ↓
-Symlink traversal escape
-        ↓
-Write → /etc/sudoers
-        ↓
-Passwordless sudo
-        ↓
-ROOT SHELL
-```
-
 ---
 
-# 🔍 Phase 1 – Enumeration
+# 🔍 Phase 1 – Reconn & Enumeration
+
+![ffuf](screenshots/nmap-htb.png)
 
 ## Subdomain Discovery
 
