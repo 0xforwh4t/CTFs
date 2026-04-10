@@ -51,7 +51,7 @@ nc -lvnp 4444
 
 
 ![wackypass](screenshots/wacky-pass.png)
-ssh (p + salt ) sha256
+### ssh (p + salt ) sha256
 see ['pass.py'](./wacky.py)
 ```
 import hashlib
