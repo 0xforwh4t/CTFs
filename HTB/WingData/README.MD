@@ -36,6 +36,9 @@ ftp.wingdata.htb
 ![ffuf](screenshots/ftp-wingdata-htb.png)
 ---
 
+### Searching Version exploit
+![searchsploit](screenshots/ftp-wingdata-htb.png)
+
 # 🔎 Phase 2 – Foothold Analysis
 
 The system exposes a backup/restore mechanism:
