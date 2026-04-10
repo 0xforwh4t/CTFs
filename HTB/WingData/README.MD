@@ -84,7 +84,7 @@ The system exposes a backup/restore mechanism:
 
 ---
 
-# ⚠️ Phase 3 – Vulnerability Analysis
+## ⚠️ Phase 3 – Vulnerability Analysis
 
 ## Root Cause: Insecure Tar Extraction
 
@@ -94,14 +94,9 @@ Python's tarfile module is vulnerable when:
 * Paths are not validated
 * Extraction occurs with elevated privileges
 
-### Vulnerability Class
-
-* CWE-22: Path Traversal
-* CWE-59: Link Following
-
 ---
 
-# 💥 Phase 4 – Exploit Development
+## 💥 Phase 4 – Exploit Development
 
 ## Exploit Strategy
 
@@ -187,41 +182,12 @@ root
 
 # 📸 Evidence
 
-## Enumeration
-
-![ffuf](screenshots/ffuf_enum.png)
-
 ## Exploit Execution
-
-![exploit](screenshots/exploit_run.png)
 
 ## Root Shell
 
-![root](screenshots/root_shell.png)
+![root](screenshots/rootsh.png)
 
----
-
-# 🧠 Why This Exploit Works
-
-## Trust Boundary Violation
-
-User-controlled archive → executed by root process
-
----
-
-## Missing Security Controls
-
-* ❌ No symlink filtering
-* ❌ No path canonicalization
-* ❌ No privilege separation
-
----
-
-## Dangerous Default
-
-```python
-tar.extractall()
-```
 
 
 
