@@ -51,7 +51,7 @@ ffuf -u http://wingdata.htb -H "Host: FUZZ.wingdata.htb" \
 ```
 ftp.wingdata.htb
 ```
-
+![ffuf](screenshots/ftp-wingdata-htb.png)
 ---
 
 # 🔎 Phase 2 – Foothold Analysis
