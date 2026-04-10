@@ -1,10 +1,10 @@
 
-# 🧠 WingData – Advanced Exploit Research (HTB / CTF)
+# WingData – Advanced Exploit Research (HTB / CTF)
 
 > A deep-dive security research repository demonstrating **Tar Symlink Path Traversal → Root Privilege Escalation**.
 ---
 
-# 📌 Executive Summary
+# Executive Summary
 
 | Field                | Value                        |
 | -------------------- | ---------------------------- |
@@ -68,7 +68,7 @@ with open("/usr/share/wordlists/rockyou.txt", "r", errors="ignore") as f:
 ```
 ### ssh login with wacky's password
 ![p-salt](screenshots/p-salt.png)
-# 🔎 Phase 2 – Foothold Analysis
+# Phase 2 – Foothold Analysis
 
 The system exposes a backup/restore mechanism:
 
@@ -84,7 +84,7 @@ The system exposes a backup/restore mechanism:
 
 ---
 
-## ⚠️ Phase 3 – Vulnerability Analysis
+## Phase 3 – Vulnerability Analysis
 
 ## Root Cause: Insecure Tar Extraction
 
@@ -96,7 +96,7 @@ Python's tarfile module is vulnerable when:
 
 ---
 
-## 💥 Phase 4 – Exploit Development
+## Phase 4 – Exploit Development
 
 ## Exploit Strategy
 
@@ -108,7 +108,7 @@ Python's tarfile module is vulnerable when:
 
 ---
 
-## 🔬 Exploit Internals
+## Exploit Internals
 
 ### 1. Directory Depth Trick
 
@@ -166,7 +166,7 @@ See [`exploit.py`](./backup.py)
 
 ---
 
-# 🚀 Phase 5 – Exploitation
+# Phase 5 – Exploitation
 
 ```bash
 python3 exploit.py
@@ -180,7 +180,7 @@ root
 
 ---
 
-# 📸 Evidence
+# Evidence
 
 ## Exploit Execution
 
