@@ -37,7 +37,7 @@ ftp.wingdata.htb
 ---
 
 ### Searching Version exploit
-![searchsploit](screenshots/ftp-wingdata-htb.png)
+![searchsploit](screenshots/searchsploit.png)
 
 # 🔎 Phase 2 – Foothold Analysis
 
