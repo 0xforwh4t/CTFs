@@ -1,4 +1,4 @@
-
+![wing](screenshots/wing.png)
 # WingData – Advanced Exploit Research (HTB / CTF)
 
 > A deep-dive security research repository demonstrating **Tar Symlink Path Traversal → Root Privilege Escalation**.
