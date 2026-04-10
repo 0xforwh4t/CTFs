@@ -51,6 +51,8 @@ nc -lvnp 4444
 
 
 ![wackypass](screenshots/wacky-pass.png)
+ssh (p + salt ) sha256
+see ['pass.py'](./wacky.py)
 ```
 import hashlib
 
@@ -221,92 +223,10 @@ User-controlled archive → executed by root process
 tar.extractall()
 ```
 
-➡️ Extracts everything blindly
 
----
 
-# 🛡️ Mitigation Strategies
 
-## 1. Safe Extraction
 
-```python
-for member in tar.getmembers():
-    if member.issym() or member.islnk():
-        continue
-```
-
----
-
-## 2. Path Validation
-
-```python
-real_path = os.path.realpath(member.name)
-if not real_path.startswith(safe_dir):
-    raise Exception("Path Traversal Detected")
-```
-
----
-
-## 3. Drop Privileges
-
-* Never extract archives as root
-
----
-
-## 4. Use Sandboxing
-
-* chroot / containers
-
----
-
-# 🔬 Detection & Hunting
-
-### Indicators of Compromise
-
-* Unexpected tar extraction behavior
-* Modified `/etc/sudoers`
-* Suspicious backup archives
-
----
-
-# 📚 References
-
-* Python tarfile security advisory
-* CWE-22, CWE-59
-* Zip Slip research
-
----
-
-# ⚡ Reproducibility
-
-```bash
-git clone https://github.com/yourusername/wingdata-advanced
-cd wingdata-advanced
-python3 exploit.py
-```
-
----
-
-# 🧾 License
-
-MIT License
-
----
-
-# ⚠️ Disclaimer
-
-This research is intended for **educational purposes and authorized environments only**.
-
----
-
-# ⭐ Author Notes
-
-This repo is structured to reflect real-world vulnerability research methodology:
-
-* Clear attack chain
-* Root cause analysis
-* Exploit reliability
-* Defensive guidance
 
 ---
 
