@@ -50,7 +50,7 @@ nc -lvnp 4444
 ![nc](screenshots/nc-reverse.png)
 
 
-![wackypass](screenshots/wackypass.png)
+![wackypass](screenshots/wacky-pass.png)
 ```
 import hashlib
 
@@ -64,7 +64,8 @@ with open("/usr/share/wordlists/rockyou.txt", "r", errors="ignore") as f:
             print("FOUND:", pw)
             break
 ```
-
+### ssh login with wacky's password
+![p-salt](screenshots/p-salt.png)
 # 🔎 Phase 2 – Foothold Analysis
 
 The system exposes a backup/restore mechanism:
