@@ -35,6 +35,7 @@ ftp.wingdata.htb
 ```
 ![ffuf](screenshots/ftp-wingdata-htb.png)
 ---
+The Wing FTP Server v7.4.3 is vulnerable to an unauthenticated remote code execution (RCE) flaw tracked as CVE-2025-47812, which allows attackers to execute arbitrary commands with root privileges on Linux
 
 ### Searching Version exploit
 ![searchsploit](screenshots/searchsploit.png)
