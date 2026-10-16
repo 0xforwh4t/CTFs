@@ -5,8 +5,8 @@
 **Difficulty:** Medium  
 **Services:** SSH, nginx (vhost), Uvicorn (FastAPI), ClickHouse HTTP  
 **Flags:**
-- `user.txt` — `daefeee9955d3b41b49559d011fc5f67`
-- `root.txt` — `ad36f325ccf0d8204c2e893554ee115c`
+- `user.txt` — ``
+- `root.txt` — ``
 
 An airline AIDX message pipeline built on FastAPI → Kafka → ClickHouse. The box chains an exposed Spring Boot Actuator heapdump, XXE in an XML parser worker, credential reuse, a root-owned systemd timer that leaks its password in `/proc`, and an arbitrary file write into ClickHouse's `user_files/` directory that yields root RCE.
 
